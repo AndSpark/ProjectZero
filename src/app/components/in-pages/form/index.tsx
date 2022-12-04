@@ -28,9 +28,9 @@ export default class FormExample extends VueComponent {
 			<IonPage ref='page'>
 				<IonHeader>
 					<IonToolbar>
-						<IonButtons slot='start'>
+						<ion-buttons slot='start'>
 							<ion-back-button defaultHref='/index' text='返回'></ion-back-button>
-						</IonButtons>
+						</ion-buttons>
 						<IonTitle>上报</IonTitle>
 					</IonToolbar>
 				</IonHeader>

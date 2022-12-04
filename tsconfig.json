@@ -14,7 +14,7 @@
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
 		"useDefineForClassFields": false,
-		"types": ["webpack-env", "jest"],
+		"types": ["webpack-env", "jest", "node"],
 		"paths": {
 			"@/*": ["src/*"]
 		},

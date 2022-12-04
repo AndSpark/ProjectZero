@@ -1,22 +1,12 @@
-import {
-	IonApp,
-	IonIcon,
-	IonLabel,
-	IonPage,
-	IonRouterOutlet,
-	IonTabBar,
-	IonTabButton,
-	IonTabs,
-	useIonRouter,
-} from '@ionic/vue'
-import { Component, Computed, Link, VueComponent } from 'vue3-oop'
-import AuthService from './core/authentication/auth.service'
-import TokenService from './core/authentication/token.service'
+import { IonApp, IonRouterOutlet } from '@ionic/vue'
+import { Component, VueComponent } from 'vue3-oop'
 import { HttpService } from './core/http/http'
 import RouterStart from './core/router'
+import { LocalStorageService } from './core/storage/storage.service'
+import ThemeService from './core/theme/theme.service'
 
 @Component({
-	providers: [HttpService, RouterStart, AuthService, TokenService],
+	providers: [HttpService, RouterStart, LocalStorageService, ThemeService],
 })
 export default class App extends VueComponent {
 	render() {
