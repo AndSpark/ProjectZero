@@ -231,7 +231,12 @@ ion-tab-bar,
 ion-tab-bar ion-tab-button {
 	background-color: transparent;
 }
-
+.ios .list-ios.list-inset ion-item {
+	--border-width: 0 0 0.5px 0;
+}
+.ios .list-ios.list-inset ion-item:last-child {
+	--border-width: 0;
+}
 .ios ion-item::part(native) {
 	transition-duration: 0s;
 }
