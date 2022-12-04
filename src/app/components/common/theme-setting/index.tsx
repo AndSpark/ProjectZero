@@ -3,12 +3,16 @@ import {
 	IonCard,
 	IonCardHeader,
 	IonCardSubtitle,
+	IonContent,
 	IonIcon,
 	IonItem,
 	IonLabel,
 	IonList,
+	IonListHeader,
 	IonRadio,
 	IonRadioGroup,
+	IonText,
+	IonTitle,
 } from '@ionic/vue'
 import { cubeOutline, moon, sunnyOutline } from 'ionicons/icons'
 import { injectService, VueComponent } from 'vue3-oop'
@@ -18,11 +22,11 @@ export default class ThemeSetting extends VueComponent {
 
 	render() {
 		return (
-			<IonCard class='ion-padding-bottom'>
-				<IonCardHeader>
-					<IonCardSubtitle>外观</IonCardSubtitle>
-				</IonCardHeader>
-				<IonList>
+			<>
+				<IonText color={'medium'} class='ion-padding-start ion-margin-start'>
+					<sub>外观</sub>
+				</IonText>
+				<IonList inset>
 					<IonRadioGroup
 						value={this.themeService?.theme}
 						onIonChange={e => this.themeService?.switchTheme(e.detail.value)}
@@ -44,7 +48,7 @@ export default class ThemeSetting extends VueComponent {
 						</IonItem>
 					</IonRadioGroup>
 				</IonList>
-			</IonCard>
+			</>
 		)
 	}
 }

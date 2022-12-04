@@ -236,6 +236,6 @@ ion-tab-bar ion-tab-button {
 	transition-duration: 0s;
 }
 
-.ios .dark ion-card ion-item::part(native) {
+.ios .dark ion-item::part(native) {
 	background-color: var(--ion-card-background);
 }

@@ -7,7 +7,7 @@ export type Theme = 'light' | 'dark' | 'system'
 
 @Injectable()
 export default class ThemeService extends VueService {
-	@Mut() private themeValue: Exclude<Theme, 'system'> = 'light'
+	@Mut() themeValue: Exclude<Theme, 'system'> = 'light'
 	@Mut() theme: Theme = 'light'
 	localStorageService = injectService(LocalStorageService)
 
